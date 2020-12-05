@@ -10,11 +10,11 @@
  "env": {
    "TG_API_ID": {
       "description": "Your Telegram API ID. Get this value from my.telegram.org!",
-      "value": ""
+      "value": "2803227"
   },
    "TG_API_HASH": {
       "description": " Your Telegram API hash. Get this value from my.telegram.org!",
-      "value": ""
+      "value": "2a7518366d9f395750232e8f21ad85dc"
   },
    "TG_SESSION_NAME": {
       "description": "Run Console this (python3 GenerateStringSession.py) ",
@@ -26,8 +26,8 @@
       "required": false
   },
    "PUBLIC_URL": {
-      "description": "The Heroku App URL similar to https://<appname>.herokuapp.com/",
-      "value": ""
+      "description": "The Heroku App URL similar to https://filetolink.kintohub.com/",
+      "value": "https://filetolink.kintohub.com/"
   },
    "TG_START_MESG": {
       "description": "Set /start Message",
