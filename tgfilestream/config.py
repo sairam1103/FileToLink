@@ -27,18 +27,18 @@ if not 1 <= port <= 65535:
     sys.exit(1)
 
 try:
-    api_id = int("2803227")
-    api_hash = "2a7518366d9f395750232e8f21ad85dc"
+    api_id = int(os.environ["2803227"})
+    api_hash = os.environ["2a7518366d9f395750232e8f21ad85dc"]
 except (KeyError, ValueError):
     print("Please set the TG_API_ID and TG_API_HASH environment variables correctly")
     print("You can get your own API keys at https://my.telegram.org/apps")
     sys.exit(1)
 
 trust_headers = "False"
-host = "localhost"
+host = os.environ["localhost"]
 public_url = URL(os.environ.get("PUBLIC_URL", f"http://{host}:{port}"))
 
-session_name = "tgfilestream"
+session_name = os.environ["tgfilestream"]
 
 log_config = os.environ.get("LOG_CONFIG")
 debug = "True"
@@ -52,7 +52,7 @@ except ValueError:
 
 try:
     # The per-DC connection limit
-    connection_limit = int(os.environ.get("CONNECTION_LIMIT", "20"))
+    connection_limit = int(os.environ("20"))
 except ValueError:
     print("Please make sure the CONNECTION_LIMIT environment variable is an integer")
     sys.exit(1)
