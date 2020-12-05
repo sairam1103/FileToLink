@@ -27,7 +27,7 @@ if not 1 <= port <= 65535:
     sys.exit(1)
 
 try:
-    api_id = int(os.environ["2803227"})
+    api_id = int(os.environ["2803227"])
     api_hash = os.environ["2a7518366d9f395750232e8f21ad85dc"]
 except (KeyError, ValueError):
     print("Please set the TG_API_ID and TG_API_HASH environment variables correctly")
